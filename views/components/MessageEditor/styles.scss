@@ -1,0 +1,39 @@
+.container {
+  min-height: 150px;
+  border-top: solid 1px rgba(36, 33, 33, 0.2);
+  padding: 10px;
+  display: flex;
+  align-items: stretch;
+  .avatar {
+    width: 120px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .editor {
+    height: 150px;
+    flex: 1;
+    .buttons {
+      margin-top: 5px;
+      text-align: right;
+    }
+    .textarea {
+      color: rgba(36, 33, 33, 0.8);
+      height: 110px;
+      outline: none;
+      overflow: auto;
+      p, blockquote, pre, h1, h2, h3, ul, ol {
+        margin-top: 0;
+      }
+      &::-webkit-scrollbar {
+        width: 4px;
+        background-color: rgba(36, 33, 33, 0.2);
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        background-color: rgba(36, 33, 33, 0.5);
+      }
+    }
+  }
+}

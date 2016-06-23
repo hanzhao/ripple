@@ -1,0 +1,31 @@
+.card {
+  display: flex;
+  padding: 7px;
+  border: solid rgba(255, 255, 255, 0.1);
+  border-bottom-width: 1px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+  &:hover, &:focus {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  .avatar {
+    margin-right: 15px;
+  }
+  .content {
+    font-size: 13px;
+    line-height: 18px;
+    .title {
+      margin: 3px 0;
+      font-weight: bold;
+    }
+    .description {
+      margin-top: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 215px;
+    }
+  }
+}

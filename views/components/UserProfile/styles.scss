@@ -1,0 +1,17 @@
+.profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* background: url(./ripple-inv.png) no-repeat;
+  background-size: auto 100%;
+  background-position: right; */
+  .name {
+    margin-left: 1em;
+    font-size: 18px;
+  }
+  .icon {
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+  }
+}

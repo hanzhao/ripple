@@ -1,0 +1,37 @@
+.container {
+  padding: 20px 0;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 4px;
+    background-color: rgba(36, 33, 33, 0.2);
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: rgba(36, 33, 33, 0.5);
+  }
+  .line {
+    display: flex;
+    padding: 10px 0;
+    font-size: 13px;
+    /*&:hover {
+      background-color: rgba(36, 33, 33, 0.05);
+    }*/
+    .avatar {
+      width: 120px;
+      text-align: center;
+    }
+    .content {
+      flex: 1;
+      word-break: break-all;
+      .name {
+        font-weight: bold;
+      }
+    }
+    .time {
+      margin-top: 1em;
+      width: 8em;
+      font-size: 11px;
+      color: rgba(36, 33, 33, 0.5);
+    }
+  }
+}

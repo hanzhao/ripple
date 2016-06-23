@@ -1,0 +1,53 @@
+.input {
+  border-radius: 2px;
+  background-color: rgba(36, 33, 33, 0.3);
+  padding: 10px 10px;
+  border: solid rgba(36, 33, 33, 0.4) 1px;
+  color: rgba(255, 255, 255, 0.95);
+  appearance: none;
+  outline: none;
+  &::placeholder {
+    margin-left: 2em;
+    color: rgba(255, 255, 255, 0.95);
+  }
+}
+
+.group {
+  width: 100%;
+  position: relative;
+  display: flex;
+  .before {
+    padding: 10px 10px;
+    background-color: rgba(36, 33, 33, 0.3);
+    border-top: solid rgba(36, 33, 33, 0.4) 1px;
+    border-left: solid rgba(36, 33, 33, 0.4) 1px;
+    border-bottom: solid rgba(36, 33, 33, 0.4) 1px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+  & > input {
+    min-width: 100px;
+    flex: 1;
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .hint {
+    padding: 8px 0px;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    color: #f50;
+    opacity: 0.5;
+    animation: hint-fade-in .5s 1;
+  }
+}
+
+@keyframes hint-fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,28 @@
+.selectors {
+  margin-top: 10px;
+  display: flex;
+  .selector {
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    height: 24px;
+    text-align: center;
+    transition: all .5s;
+    border-radius: 1px;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+      color: rgba(36, 33, 33, 0.8);
+    }
+    &.active {
+      background-color: rgba(255, 255, 255, 0.6);
+      color: rgba(36, 33, 33, 0.9);
+    }
+  }
+  .searchBox {
+    flex: 1;
+    min-width: 100px;
+    padding: 10px 19px;
+  }
+}

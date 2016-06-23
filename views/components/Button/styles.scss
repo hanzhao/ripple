@@ -1,0 +1,32 @@
+.button {
+  color: rgba(255, 255, 255, 0.95);
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 4px 15px;
+}
+
+.large {
+  padding: 10px 50px;
+  border-radius: 4px;
+}
+
+.transparent {
+  background-color: rgba(0, 0, 0, 0);
+  border: solid rgba(36, 33, 33, 0.5) 1px;
+  transition: all .7s;
+  &:hover, &:focus, &:active {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(36, 33, 33, 0.8);
+  }
+}
+
+.transparent.inverse {
+  color: rgba(36, 33, 33, 0.8);
+  background-color: rgba(0, 0, 0, 0);
+  border: solid rgba(36, 33, 33, 0.5) 1px;
+  transition: all .7s;
+  &:hover, &:focus, &:active {
+    background-color: rgba(36, 33, 33, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
